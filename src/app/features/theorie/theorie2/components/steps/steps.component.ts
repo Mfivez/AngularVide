@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-steps',
-  templateUrl: './steps.component.html',
-  styleUrl: './steps.component.scss'
+  templateUrl: './steps.component.html'
 })
 export class StepsComponent {
   imageUrl1: String = "assets/composants/rootV1.png"

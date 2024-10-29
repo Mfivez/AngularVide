@@ -4,8 +4,7 @@ import { NavigateService } from '../shared/services/navigate.service';
 
 @Component({
   selector: 'app-theorie11',
-  templateUrl: './theorie11.component.html',
-  styleUrl: './theorie11.component.scss'
+  templateUrl: './theorie11.component.html'
 })
 export class Theorie11Component {
   

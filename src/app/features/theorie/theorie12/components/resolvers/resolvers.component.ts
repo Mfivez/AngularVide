@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-resolvers',
-  templateUrl: './resolvers.component.html',
-  styleUrl: './resolvers.component.scss'
+  templateUrl: './resolvers.component.html'
 })
 export class ResolversComponent {
   imageUrl: String = "assets/resolvers/userResolver.png"

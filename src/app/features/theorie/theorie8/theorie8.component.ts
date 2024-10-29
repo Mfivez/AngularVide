@@ -3,8 +3,7 @@ import { NavigateService } from '../shared/services/navigate.service';
 
 @Component({
   selector: 'app-theorie8',
-  templateUrl: './theorie8.component.html',
-  styleUrl: './theorie8.component.scss'
+  templateUrl: './theorie8.component.html'
 })
 export class Theorie8Component implements OnChanges, OnInit, DoCheck, 
                                           AfterContentInit, AfterContentChecked, 

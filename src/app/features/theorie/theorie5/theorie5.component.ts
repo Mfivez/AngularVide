@@ -3,8 +3,7 @@ import { NavigateService } from '../shared/services/navigate.service';
 
 @Component({
   selector: 'app-theorie5',
-  templateUrl: './theorie5.component.html',
-  styleUrl: './theorie5.component.scss'
+  templateUrl: './theorie5.component.html'
 })
 export class Theorie5Component {
   title: String = "Bienvenue sur Angular !"

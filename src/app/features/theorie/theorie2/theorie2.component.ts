@@ -3,8 +3,7 @@ import { NavigateService } from '../shared/services/navigate.service';
 
 @Component({
   selector: 'app-theorie2',
-  templateUrl: './theorie2.component.html',
-  styleUrl: './theorie2.component.scss'
+  templateUrl: './theorie2.component.html'
 })
 export class Theorie2Component {
 

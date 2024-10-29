@@ -92,6 +92,41 @@ input:checked + .slider:before {
   color: #e92d2d;
   font-weight: bold;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+thead th {
+  padding: 12px;
+  border-bottom: 2px solid #4a90e2;
+}
+
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-controls span {
+  font-size: 18px;
+  margin: 0 10px;
+  display: inline-block;
+  line-height: 36px;
+}
+
 // Dark-mode
 body.dark-theme {
   font-family: 'Roboto', sans-serif;
@@ -101,6 +136,19 @@ body.dark-theme {
 }
 
 .dark-theme {
+  thead th {
+    background-color: $dark-primary-d2;
+    font-weight: bold;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #202220;
+  }
+
+  tbody tr:hover {
+    background-color: #0c2c0c;
+  }
+
   .cta-button {
     background: transparent;
     color: $primary-color-d;
@@ -448,6 +496,20 @@ body.light-theme {
 }
 
 .light-theme {
+
+  thead th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  tbody tr:hover {
+    background-color: #eef5ff;
+  }
+
   img {
     display: flex;
     justify-content: center; 
@@ -788,50 +850,6 @@ body.light-theme {
     &:hover {
       border-color: lighten($secondary-color, 10%);
     }
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-  }
-  
-  thead th {
-    background-color: #f1f1f1;
-    font-weight: bold;
-    padding: 12px;
-    border-bottom: 2px solid #4a90e2;
-  }
-  
-  tbody tr {
-    transition: background-color 0.3s ease;
-  }
-  
-  tbody tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  tbody tr:hover {
-    background-color: #eef5ff;
-  }
-  
-  td {
-    padding: 12px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .pagination-controls {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .pagination-controls span {
-    font-size: 18px;
-    margin: 0 10px;
-    display: inline-block;
-    line-height: 36px;
   }
   
   

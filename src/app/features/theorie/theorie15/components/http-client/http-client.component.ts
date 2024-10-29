@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-http-client',
-  templateUrl: './http-client.component.html',
-  styleUrl: './http-client.component.scss'
+  templateUrl: './http-client.component.html'
 })
 export class HttpClientComponent {
   imageUrl1: string = "assets/httpClient/appParam.png";

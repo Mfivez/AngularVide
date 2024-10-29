@@ -3,8 +3,7 @@ import { NavigateService } from '../shared/services/navigate.service';
 
 @Component({
   selector: 'app-theorie6',
-  templateUrl: './theorie6.component.html',
-  styleUrl: './theorie6.component.scss'
+  templateUrl: './theorie6.component.html'
 })
 export class Theorie6Component {
   imageUrl1: String = "assets/directives/highlight.png"

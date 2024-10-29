@@ -6,7 +6,6 @@ import { NavigateService } from '../shared/services/navigate.service';
 @Component({
   selector: 'app-theorie10',
   templateUrl: './theorie10.component.html',
-  styleUrl: './theorie10.component.scss',
   providers: [LocalService]
 })
 export class Theorie10Component {

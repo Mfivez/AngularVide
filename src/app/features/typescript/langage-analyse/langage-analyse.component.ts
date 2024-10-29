@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-langage-analyse',
-  templateUrl: './langage-analyse.component.html',
-  styleUrl: './langage-analyse.component.scss'
+  templateUrl: './langage-analyse.component.html'
 })
 export class LangageAnalyseComponent {
   imageUrl1: String = "assetsForTs/analyse/number.png"

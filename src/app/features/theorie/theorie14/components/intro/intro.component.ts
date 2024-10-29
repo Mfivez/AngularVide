@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-intro',
-  templateUrl: './intro.component.html',
-  styleUrl: './intro.component.scss'
+  templateUrl: './intro.component.html'
 })
 export class IntroComponent {
   imageUrl1: string = "assets/observables/observable.png"
