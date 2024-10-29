@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-event-binding',
-  templateUrl: './event-binding.component.html',
-  styleUrl: './event-binding.component.scss'
+  templateUrl: './event-binding.component.html'
 })
 export class EventBindingComponent {
   nombre1: number = 0;

@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-directives-attributs',
-  templateUrl: './directives-attributs.component.html',
-  styleUrl: './directives-attributs.component.scss'
+  templateUrl: './directives-attributs.component.html'
 })
 export class DirectivesAttributsComponent {
 

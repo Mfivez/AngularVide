@@ -6,8 +6,7 @@ import { ProductService } from '../../tools/services/product.service';
 
 @Component({
   selector: 'app-update',
-  templateUrl: './update.component.html',
-  styleUrl: './update.component.scss'
+  templateUrl: './update.component.html'
 })
 export class UpdateComponent implements OnInit {
   editForm: FormGroup;

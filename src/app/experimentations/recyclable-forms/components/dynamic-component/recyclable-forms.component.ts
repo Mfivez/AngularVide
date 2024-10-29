@@ -5,8 +5,7 @@ import { FormFieldType } from './tools/enum/form-field-type';
 
 @Component({
   selector: 'recyclable-form',
-  templateUrl: './recyclable-forms.component.html',
-  styleUrl: './recyclable-forms.component.scss'
+  templateUrl: './recyclable-forms.component.html'
 })
 export class RecyclableFormsComponent implements OnInit {
   @Input() fields: RecyclableFormField[] = []

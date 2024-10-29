@@ -3,8 +3,7 @@ import { AuthService } from '../../tools/services/auth.service';
 
 @Component({
   selector: 'app-observables',
-  templateUrl: './observables.component.html',
-  styleUrl: './observables.component.scss'
+  templateUrl: './observables.component.html'
 })
 export class ObservablesComponent {
   isConnected: boolean = false;

@@ -5,7 +5,6 @@ import { FakeAuthService } from '../../tools/fake-auth.service';
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
-  styleUrl: './services.component.scss',
   providers: [FakeAuthService]
 })
 export class ServicesComponent {

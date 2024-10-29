@@ -3,8 +3,7 @@ import { LoginService } from '../../tools/services/login.service';
 
 @Component({
   selector: 'app-guards',
-  templateUrl: './guards.component.html',
-  styleUrl: './guards.component.scss'
+  templateUrl: './guards.component.html'
 })
 export class GuardsComponent {
   isConnected: boolean = false

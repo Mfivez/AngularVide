@@ -6,8 +6,7 @@ import { Product } from '../../tools/models/product.model';
 
 @Component({
   selector: 'app-add',
-  templateUrl: './add.component.html',
-  styleUrl: './add.component.scss'
+  templateUrl: './add.component.html'
 })
 export class AddComponent {
 

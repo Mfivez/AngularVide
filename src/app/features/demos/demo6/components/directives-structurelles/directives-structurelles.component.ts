@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-directives-structurelles',
-  templateUrl: './directives-structurelles.component.html',
-  styleUrl: './directives-structurelles.component.scss'
+  templateUrl: './directives-structurelles.component.html'
 })
 export class DirectivesStructurellesComponent {
 

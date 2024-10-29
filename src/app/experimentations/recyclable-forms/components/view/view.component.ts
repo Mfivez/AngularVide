@@ -5,8 +5,7 @@ import { ErrorMessages } from './tools/constantes/error-messages';
 
 @Component({
   selector: 'app-view',
-  templateUrl: './view.component.html',
-  styleUrl: './view.component.scss'
+  templateUrl: './view.component.html'
 })
 export class ViewComponent {
   formFields: RecyclableFormField[] = [

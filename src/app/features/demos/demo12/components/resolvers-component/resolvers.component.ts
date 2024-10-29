@@ -4,8 +4,7 @@ import { User } from '../../tools/models/user.models';
 
 @Component({
   selector: 'app-resolvers',
-  templateUrl: './resolvers.component.html',
-  styleUrl: './resolvers.component.scss'
+  templateUrl: './resolvers.component.html'
 })
 export class ResolversComponent {
 

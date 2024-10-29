@@ -3,8 +3,7 @@ import { NavigateService } from '../../theorie/shared/services/navigate.service'
 
 @Component({
   selector: 'app-demo9',
-  templateUrl: './demo9.component.html',
-  styleUrl: './demo9.component.scss'
+  templateUrl: './demo9.component.html'
 })
 export class Demo9Component {
   constructor(public readonly nav : NavigateService) {}

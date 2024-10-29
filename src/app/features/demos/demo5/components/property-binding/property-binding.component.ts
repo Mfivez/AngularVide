@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-property-binding',
-  templateUrl: './property-binding.component.html',
-  styleUrl: './property-binding.component.scss'
+  templateUrl: './property-binding.component.html'
 })
 export class PropertyBindingComponent {
   str: string = "hello world"

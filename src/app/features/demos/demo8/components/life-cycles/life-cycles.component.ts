@@ -3,8 +3,7 @@ import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit,
 
 @Component({
   selector: 'app-life-cycles',
-  templateUrl: './life-cycles.component.html',
-  styleUrl: './life-cycles.component.scss'
+  templateUrl: './life-cycles.component.html'
 })
 export class LifeCyclesComponent{
 

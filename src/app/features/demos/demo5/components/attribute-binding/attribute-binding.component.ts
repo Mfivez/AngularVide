@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-attribute-binding',
-  templateUrl: './attribute-binding.component.html',
-  styleUrl: './attribute-binding.component.scss'
+  templateUrl: './attribute-binding.component.html'
 })
 export class AttributeBindingComponent {
   maVariable: number = 0;

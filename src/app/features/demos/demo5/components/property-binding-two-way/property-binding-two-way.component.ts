@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-property-binding-two-way',
-  templateUrl: './property-binding-two-way.component.html',
-  styleUrl: './property-binding-two-way.component.scss'
+  templateUrl: './property-binding-two-way.component.html'
 })
 export class PropertyBindingTwoWayComponent {
   maVariable1: string = "";

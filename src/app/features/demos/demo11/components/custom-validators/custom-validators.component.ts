@@ -8,8 +8,7 @@ import { twoPasswordCheckValidator } from '../../tools/validators/twoPasswordVal
 
 @Component({
   selector: 'app-custom-validators',
-  templateUrl: './custom-validators.component.html',
-  styleUrls: ['./custom-validators.component.scss']
+  templateUrl: './custom-validators.component.html'
 })
 export class CustomValidatorsComponent {
   myForm!: FormGroup;

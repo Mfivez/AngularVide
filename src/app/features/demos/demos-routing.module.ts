@@ -14,11 +14,6 @@ import { Demo13Component } from './demo13/demo13.component';
 import { Demo14Component } from './demo14/demo14.component';
 import { Demo15Component } from './demo15/demo15.component';
 import { Demo16Component } from './demo16/demo16.component';
-import { Demo17Component } from './demo17/demo17.component';
-import { Demo18Component } from './demo18/demo18.component';
-import { Demo19Component } from './demo19/demo19.component';
-import { Demo20Component } from './demo20/demo20.component';
-import { Demo21Component } from './demo21/demo21.component';
 
 const routes: Routes = [
   {path: '3', component: Demo3Component },
@@ -37,11 +32,6 @@ const routes: Routes = [
   {path: '15', component: Demo15Component },
   {path: '15', loadChildren: () => import('./demo15/demo15.module').then(m => m.Demo15Module) },
   {path: '16', component: Demo16Component },
-  {path: '17', component: Demo17Component },
-  {path: '18', component: Demo18Component },
-  {path: '19', component: Demo19Component },
-  {path: '20', component: Demo20Component },
-  {path: '21', component: Demo21Component },
 ];
 
 @NgModule({

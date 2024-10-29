@@ -3,8 +3,7 @@ import { AbstractControl } from '@angular/forms';
 
 @Component({
   selector: 'validators-errors-handler',
-  templateUrl: './validators-errors-handler.component.html',
-  styleUrl: './validators-errors-handler.component.scss'
+  templateUrl: './validators-errors-handler.component.html'
 })
 export class ValidatorsErrorsHandlerComponent {
   @Input() control: AbstractControl | null = null;

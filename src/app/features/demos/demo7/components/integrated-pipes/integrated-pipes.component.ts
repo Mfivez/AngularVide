@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-integrated-pipes',
-  templateUrl: './integrated-pipes.component.html',
-  styleUrl: './integrated-pipes.component.scss'
+  templateUrl: './integrated-pipes.component.html'
 })
 export class IntegratedPipesComponent {
   maVariable1: string = "hello world !"

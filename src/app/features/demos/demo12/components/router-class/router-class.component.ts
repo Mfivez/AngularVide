@@ -3,8 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-router-class',
-  templateUrl: './router-class.component.html',
-  styleUrl: './router-class.component.scss'
+  templateUrl: './router-class.component.html'
 })
 export class RouterClassComponent {
   id!: number;
