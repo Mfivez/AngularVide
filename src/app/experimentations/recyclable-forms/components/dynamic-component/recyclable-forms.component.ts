@@ -9,7 +9,9 @@ import { FormFieldType } from './tools/enum/form-field-type';
 })
 export class RecyclableFormsComponent implements OnInit {
   @Input() fields: RecyclableFormField[] = []
+
   form: FormGroup
+  
   formFieldTypes = FormFieldType
 
   constructor(private fb: FormBuilder) {

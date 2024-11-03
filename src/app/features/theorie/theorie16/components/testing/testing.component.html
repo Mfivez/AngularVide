@@ -1,0 +1,236 @@
+<div class="concept">
+    <h2>Mise en contexte :</h2>
+    <p>
+        Le testing est essentiel en développement pour s'assurer que les différentes parties de l'application fonctionnent comme prévu et continuent de bien fonctionner même après des changements. Ici, nous allons aborder deux types de tests couramment utilisés en Angular :
+    </p>
+
+    <ul>
+        <li><p>
+            <strong>Test d'un service (test unitaire) : </strong>vérification d'une seule partie du code (une fonction ou une méthode par exemple).
+        </p></li>
+
+        <li><p>
+            <strong>Test d'un composant (test fonctionnel) :</strong> test des fonctionnalités visibles par l'utilisateur.
+        </p></li>
+    </ul>
+    
+    
+</div>
+
+<br><br>
+
+<div class="concept"> 
+    <h2>Qu'est-ce que le testing ?</h2> 
+    
+    <p>Le testing consiste à vérifier que chaque composant, service ou fonctionnalité d'une application fonctionne correctement.  </p>
+    
+    <p>Angular fournit des outils intégrés pour créer des tests unitaires (tests de fonctionnalités isolées) et des tests d'intégration (tests de composants qui travaillent ensemble).</p>
+
+</div>
+
+<br><br>
+
+<div class="concept">
+    <h2>Pourquoi faire des tests ?</h2>
+
+    <p>Les tests offrent plusieurs avantages essentiels :</p>
+    <hr>
+    <h3>Avantages :</h3>
+    <ul>
+        <li><p><strong>Prévention des régressions :</strong> les tests détectent si des modifications du code introduisent de nouvelles erreurs.</p></li>
+
+        <li><p><strong>Code fiable :</strong>  les tests assurent la qualité et la robustesse du code.</p></li>
+
+        <li><p><strong>Facilité de maintenance :</strong>  un code bien testé est plus facile à améliorer et à maintenir.</p></li>
+    </ul>
+</div>
+
+<br><br>
+
+<div class="concept">
+    <h2>Outils de testing en Angular</h2>
+
+    <p>Angular utilise principalement deux outils pour le testing :</p>
+    <ul>
+        <li><p><strong>Karma :</strong> un outil qui exécute les tests et rapporte les résultats.</p></li>
+
+        <li><p><strong>Jasmine :</strong> un framework pour écrire les tests avec des fonctions d'assertion comme expect.</p></li>
+    </ul>
+</div>
+
+<br><br>
+
+<div class="concept">
+    <h2>Test unitaire (exemple : tester un service)</h2>
+
+    <p>Un test unitaire vérifie une fonctionnalité spécifique, comme une méthode d'un service. Prenons l'exemple d'un service UserService dont le rôle est de récupérer une liste d'utilisateurs.</p>
+
+    <hr>
+
+    <h3>Service à tester :</h3>
+    <img [src]="imageURL1">
+    
+    <hr>
+
+    <p><strong class="warning">Explication :</strong> Ici, le service UserService expose une méthode getUsers() qui renvoie une liste d'utilisateurs. Nous allons tester cette méthode pour nous assurer qu'elle retourne bien la liste attendue.</p>
+
+    <hr>
+
+    <h3>Test unitaire de UserService</h3>
+
+    <p>Voici un test unitaire pour UserService afin de vérifier qu'il renvoie bien la liste d'utilisateurs.</p>
+
+    <hr>
+
+    <img [src]="imageURL4">
+
+    <hr>
+
+    <p><strong class="warning">Explication :</strong></p>
+    <ul>
+        <li><p>
+            <strong>beforeEach : </strong>initialisation du service avant chaque test.
+        </p></li>
+
+        <li><p>
+            <strong>it("should be created") : </strong>vérifie que le service est bien créé.
+        </p></li>
+
+        <li><p>
+            <strong>it("should return a list of users") :</strong> vérifie que getUsers() renvoie bien une liste de 3 utilisateurs attendus.
+        </p></li>
+    </ul>
+
+</div>
+
+<br><br>
+
+<div class="concept">
+    <h2>Test fonctionnel (exemple : tester un composant)</h2>
+
+    <p>Un test fonctionnel (ou test d'intégration) valide que plusieurs unités fonctionnent bien ensemble. Par exemple, un composant Angular qui affiche la liste des utilisateurs récupérés par UserService.</p>
+
+    <hr>
+
+    <h3>Service à tester :</h3>
+    <img [src]="imageURL2">
+    <br><br>
+    <img [src]="imageURL3">
+    
+    <hr>
+
+    <p><strong class="warning">Explication :</strong> Ce composant ComponentTestComponent affiche une liste d'utilisateurs en utilisant UserService pour obtenir les données.</p>
+
+    <hr>
+
+    <h3>Test fonctionnel de ComponentTestComponent</h3>
+
+    <p>Ici, nous allons vérifier que ComponentTestComponent affiche correctement la liste d'utilisateurs reçue du UserService.</p>
+
+    <hr>
+
+    <img [src]="imageURL5">
+
+    <p><strong class="warning">Explication :</strong></p>
+    <ul>
+        <li><p>
+            <strong>Mock du Service : </strong>le UserService est simulé (mocké) pour fournir une liste d'utilisateurs sans utiliser le service réel.
+        </p></li>
+    </ul>
+
+    <br>
+
+    <p><strong class="warning">Vérifications :</strong></p>
+    <ul>
+        <li><p>
+            <strong>it("should create") : </strong>vérifie que le composant est bien créé.
+        </p></li>
+
+        <li><p>
+            <strong>it("should display a list of users") : </strong>érifie que le composant affiche bien les noms des utilisateurs dans des éléments.
+        </p></li>
+    </ul>
+</div>
+
+<br><br>
+
+<div class="concept">
+    <h2>Analyse des outils utilisés :</h2>
+    <p>Prenons le temps de clarifier certaines choses :</p>
+
+    <hr>
+
+    <h3>1. TestBed : la Configuration de l'Environnement de Test</h3>
+
+    <p>TestBed est un utilitaire fourni par Angular qui permet de configurer et de créer un environnement pour tester des composants ou des services Angular en isolant les dépendances.</p>
+
+    <p>Lorsqu'on utilise TestBed, on initialise le composant qu'on veut tester en déclarant ses dépendances (comme les services) et en injectant des versions de test (souvent des "mocks") de ces dépendances. TestBed nous permet aussi de simuler l'initialisation d'un composant sans avoir à lancer toute l'application.</p>
+
+    <hr>
+
+    <h3>2. ComponentFixture : l'Interface pour Tester un Composant</h3>
+    
+    <p>ComponentFixture est un objet qui sert de pont entre le test et le composant Angular que vous testez. Il permet :</p>
+    <ul>
+        <li><p>
+            <strong>Accéder au composant via fixture.componentInstance.</strong>
+        </p></li>
+
+        <li><p>
+            <strong>Accéder au DOM </strong>du composant, c’est-à-dire la partie HTML qui est générée par Angular pour ce composant, via fixture.nativeElement.
+        </p></li>
+
+        <li><p>
+            <strong>Déclencher le changement de détection </strong>avec fixture.detectChanges(), ce qui force Angular à mettre à jour la vue chaque fois que les données du composant changent (utile pour voir les résultats dans les tests).
+        </p></li>
+    </ul>
+    <p>fixture, dans notre cas est utilisé pour </p>
+    <ul>
+        <li><p>
+            Créer une instance du composant ComponentTestComponent (component = fixture.componentInstance).
+        </p></li>
+
+        <li><p>
+            Détecter les changements pour que les données du composant soient mises à jour dans la vue (fixture.detectChanges()).
+        </p></li>
+    </ul>
+
+    <hr>
+
+    <h3>3. fixture.nativeElement et querySelector : Accéder aux Éléments du DOM</h3>
+
+    <p>fixture.nativeElement donne accès au DOM généré par Angular pour le composant. C'est comme si tu avais le HTML final du composant en main, et tu peux y effectuer des recherches avec querySelector et querySelectorAll.</p>
+
+    <ul>
+        <li><p>
+            <strong>querySelector : </strong>Fonction standard du DOM JavaScript qui permet de sélectionner un élément spécifique avec un sélecteur CSS. Par exemple, querySelector("li") sélectionne le premier élément <li> trouvé.
+        </p></li>
+
+        <li><p>
+            <strong>querySelectorAll : </strong>Similaire à querySelector, mais sélectionne tous les éléments correspondant au sélecteur, pas seulement le premier.
+        </p></li>
+    </ul>
+
+    <p>Dans ce test, on utilise querySelectorAll("li") pour récupérer tous les éléments de la liste <li> dans le composant, ce qui permet de vérifier qu'il y en a bien trois et de comparer leur contenu.</p>
+
+    <hr>
+
+</div>
+
+
+<br><br>
+
+<div class="concept">
+    <h2>Effectuer les tests mis en place</h2>
+
+    <p>Afin d'exécuter les tests que vous avez mis en place vous pouvez passer par la commande suivante :</p>
+
+    <hr>
+    <img [src]="imageURL6">
+
+    <hr>
+    <p>Celle-ci devrait vous ouvrir l'interface suivante, d'où vous pourrez suivre l'état de votre application :</p>
+    <img [src]="imageURL7">
+
+
+</div>

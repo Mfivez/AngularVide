@@ -9,7 +9,7 @@ export class HeaderService {
     return this.getMappedMenu([
       "Binding", "Directives", "Pipes", "Cycles de vie",
       "Input | Output", "Services | Injection", "Formulaire", "Router | Guards | Resolver", "Storages",
-      "Observables", "HttpClient", "Interceptor"
+      "Observables", "HttpClient", "Interceptor", "Testing"
     ], 5)
     }
 
@@ -17,7 +17,7 @@ export class HeaderService {
     return this.getMappedMenu([
       "Rappel : Intro", "Composants", "Routing", "NavBar", "Binding", "Directives", "Pipes", "Cycles de vie",
       "Input | Output", "Services | Injection", "Formulaire", "Router | Guards | Resolver", "Storages",
-      "Observables", "HttpClient"
+      "Observables", "HttpClient", "Testing"
     ])
   }
 

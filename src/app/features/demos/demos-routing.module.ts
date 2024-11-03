@@ -14,6 +14,7 @@ import { Demo13Component } from './demo13/demo13.component';
 import { Demo14Component } from './demo14/demo14.component';
 import { Demo15Component } from './demo15/demo15.component';
 import { Demo16Component } from './demo16/demo16.component';
+import { Demo17Component } from './demo17/demo17.component';
 
 const routes: Routes = [
   {path: '3', component: Demo3Component },
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: '15', component: Demo15Component },
   {path: '15', loadChildren: () => import('./demo15/demo15.module').then(m => m.Demo15Module) },
   {path: '16', component: Demo16Component },
+  {path: '17', component: Demo17Component },
 ];
 
 @NgModule({

@@ -76,14 +76,11 @@ export class ViewComponent {
       isArray: true,
       required: false
     },
-    {
-      controlName: 'test', 
-      label: 'Test', 
-      type: FormFieldType.TEXT, 
-      placeholder: 'Entrez', 
-      isArray: true,
-      required: false
-    }
+    { controlName: 'N\'importe quoi hein euh', 
+      label: 'Truc', 
+      type: FormFieldType.SELECT, 
+      options: ['toto', 'caca', 'pipi', 'voilà'], 
+    },
 
   ];
 }

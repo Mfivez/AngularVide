@@ -15,6 +15,7 @@ import { Demo13Module } from './demo13/demo13.module';
 import { Demo14Module } from './demo14/demo14.module';
 import { Demo15Module } from './demo15/demo15.module';
 import { Demo16Module } from './demo16/demo16.module';
+import { Demo17Module } from './demo17/demo17.module';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { Demo16Module } from './demo16/demo16.module';
     Demo14Module,
     Demo15Module,
     Demo16Module,
+    Demo17Module,
   ],
   exports: []
 })

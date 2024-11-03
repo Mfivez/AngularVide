@@ -18,9 +18,12 @@ import { Theorie14Module } from './theorie14/theorie14.module';
 import { Theorie15Module } from './theorie15/theorie15.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../../shared/shared.module';
+import { Theorie16Component } from './theorie16/theorie16.component';
+import { Theorie16Module } from './theorie16/theorie16.module';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+  ],
   imports: [
     CommonModule,
     TheorieRoutingModule,
@@ -39,6 +42,7 @@ import { SharedModule } from '../../shared/shared.module';
     Theorie13Module,
     Theorie14Module,
     Theorie15Module,
+    Theorie16Module,
     FormsModule,
     ReactiveFormsModule,
     SharedModule

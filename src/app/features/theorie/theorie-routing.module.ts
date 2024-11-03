@@ -15,6 +15,7 @@ import { Theorie12Component } from './theorie12/theorie12.component';
 import { Theorie13Component } from './theorie13/theorie13.component';
 import { Theorie14Component } from './theorie14/theorie14.component';
 import { Theorie15Component } from './theorie15/theorie15.component';
+import { Theorie16Component } from './theorie16/theorie16.component';
 
 const routes: Routes = [
   {path: "1", component: Theorie1Component},
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path: "13", component: Theorie13Component},
   {path: "14", component: Theorie14Component},
   {path: "15", component: Theorie15Component},
+  {path: "16", component: Theorie16Component}
 ];
 
 @NgModule({
