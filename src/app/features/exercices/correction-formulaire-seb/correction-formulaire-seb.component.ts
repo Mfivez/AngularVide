@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { FormBuilderService } from './tools/services/form-builder.service';
 import { NavigateService } from '../../theorie/shared/services/navigate.service';
 
 @Component({

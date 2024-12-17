@@ -7,12 +7,6 @@ import { NavigateService } from '../../../../../theorie/shared/services/navigate
   templateUrl: './user.component.html',
   styleUrl: './user.component.scss'
 })
-export class CorrectionUserComponent implements OnInit {
-  userId: number | null = null;
-
-  constructor(private route: ActivatedRoute, public nav: NavigateService) {}
-
-  ngOnInit(): void {
-    this.userId = Number(this.route.snapshot.paramMap.get('id'));
-  }
+export class CorrectionUserComponent {
+  
 }

@@ -5,11 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './user-profile.component.html'
 })
 export class CorrectionUserProfileComponent {
-  
-  user = {
-    firstName: 'dédé',
-    lastName: 'Théthé',
-    email: 'dédéThéthé@gmail.com'
-  };
-
 }

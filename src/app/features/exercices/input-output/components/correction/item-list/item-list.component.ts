@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'correction-item-list',
@@ -6,10 +6,4 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrl: './item-list.component.scss'
 })
 export class CorrectionItemListComponent {
-  @Input() items: string[] = [];
-  @Output() itemRemoved = new EventEmitter<number>();
-
-  removeItem(index: number) {
-    this.itemRemoved.emit(index);
-  }
 }

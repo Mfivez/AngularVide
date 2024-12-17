@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'correction-add-item',
@@ -6,13 +6,4 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrl: './add-item.component.scss'
 })
 export class CorrectionAddItemComponent {
-  newItem: string = '';
-  @Output() itemAdded = new EventEmitter<string>();
-
-  addItem() {
-    if (this.newItem.trim()) {
-      this.itemAdded.emit(this.newItem);
-      this.newItem = '';
-    }
-  }
 }
